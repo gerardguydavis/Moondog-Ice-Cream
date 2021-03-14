@@ -1,0 +1,158 @@
+header {
+  display: flex;
+  justify-content: center;
+  background-color: #e3365f;
+  flex-flow: row wrap;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  padding: 16px 0 0 0;
+}
+
+header a {
+  flex-basis: 100%;
+  text-decoration: none;
+}
+
+header img {
+  display: none;
+}
+
+header h1 {
+  color: #fff;
+  font-family: "Fontdiner Swanky", serif;
+  font-size: 2.85em;
+  text-align: center;
+  flex-basis: 100%;
+  margin: 0;
+}
+
+header h4 {
+  margin-top: -.25em;
+  font-size:.9em;
+  color: #fff;
+  font-family: "Hammersmith One", sans-serif;
+  text-align: center;
+}
+
+header .navmenu {
+  display: none;
+}
+
+/*******HOME PAGE*****/
+
+.home {
+  width: 100%;
+  margin: 100px 0 0 0;
+}
+
+.home h2{
+  font-family: "Shrikhand", serif;
+  text-shadow: 1px 1px 16px #e8b7c3;
+  font-size: 5em;
+  text-align: center;
+}
+
+.home a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#flavors {
+  display: flex;
+  background: url("../img/vanilla-splash.jpg") center left no-repeat pink;
+  justify-content: center;
+  align-items: center;
+  padding: 125px 0;
+  border-bottom: solid 5px #e8b7c3;
+}
+
+#locations {
+  display: flex;
+  background: url("../img/ice-cream-case.jpg") left no-repeat pink;
+  justify-content: center;
+  align-items: center;
+  padding: 125px 0;
+  border-top: solid 5px #e8b7c3;
+  border-bottom: solid 5px #e8b7c3;
+}
+
+#about {
+  display: flex;
+  background: url("../img/family.jpg") top no-repeat pink;
+  justify-content: center;
+  align-items: center;
+  padding: 125px 0;
+  border-top: solid 5px #e8b7c3;
+  border-bottom: solid 5px #e8b7c3;
+}
+
+#contact {
+  display: flex;
+  background: url("../img/cones.jpg") center no-repeat pink;
+  justify-content: center;
+  align-items: center;
+  padding: 125px 0;
+  border-top: solid 5px #e8b7c3;
+}
+
+/******FLAVORS*****/
+.flavor-head {
+  padding: 100px 0 0 0;
+  text-align: center;
+  font-family: "Hammersmith One", sans-serif;
+}
+
+.flavor-menu {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  background: url("../img/strawberry-splash.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.flavor {
+  padding: 3px 15px;
+  margin: 10px 0;
+  background-color: #fff;
+  border: solid 3px #e3365f;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  min-width: 300px;
+}
+
+.flavor-menu ul li {
+  list-style-type: none;
+}
+
+.flavor h5{
+  font-size: 1.5em;
+  margin: 10px 0 -10px 0;
+}
+
+.flav-scoop {
+  width: 50px;
+  border-radius: 25px;
+  margin-right: 10px;
+}
+
+footer {
+  background-color: #e3365f;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 15px 0;
+}
+
+footer h6 {
+  font-size: .875em;
+  margin: .25em 0;
+  font-family: "Hammersmith One", sans-serif;
+}
