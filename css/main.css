@@ -48,8 +48,7 @@ header .navmenu {
   padding: 100px 0 0 0;
   text-align: center;
   font-family: "Hammersmith One", sans-serif;
-  width: 100%;
-  background-color: #fff;
+  flex-basis: 60%;
   color: #e3365f;
   font-size: 2em;
   text-transform: uppercase;
@@ -228,6 +227,8 @@ footer h6 {
   height: 0;
   overflow: hidden;
   margin-bottom: 20px;
+  border: solid 6px #e3365f;
+  border-radius: 20px;
 }
 
 .map iframe {
