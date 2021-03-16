@@ -117,8 +117,6 @@ header .navmenu {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background: url("../img/strawberry-splash.jpg") center no-repeat pink;
-  background-size: cover;
 }
 
 .flavor-menu .content-wrapper {
@@ -148,13 +146,14 @@ header .navmenu {
   flex-basis: 65%;
   font-family: "Hammersmith One", sans-serif;
   font-size: 1rem;
-  align-item: center;
+  align-items: center;
 }
 
 .flavor h5{
   font-size: 1.5rem;
   margin: 10px 0 -10px 0;
   font-family: "Shrikhand", sans-serif;
+  color: #e3365f;
 }
 
 .flav-scoop {
@@ -290,14 +289,20 @@ address {
   margin-top: 100px;
 }
 
-#about-page h2,
-#faqs h2 {
+#about-page h2 {
   font-family: "shrikhand", sans-serif;
   color: #e3365f;
 }
 
-#about-page,
-#faqs {
+.page-background {
+  width:100%;
+  height:100%;
+  position: fixed;
+  z-index: -1;
+  background: url("../img/bg-stripes.png") repeat #f0e5d5;
+}
+
+#about-page {
   font-family: "hammersmith one", sans-serif;
   line-height: 1.3rem;
   font-size: 1em;
@@ -306,8 +311,7 @@ address {
   justify-content: center;
 }
 
-#about-page .content-wrapper,
-#faqs .content-wrapper {
+#about-page .content-wrapper  {
   display: flex;
   flex-basis: 80%;
   padding-bottom: 10px;
