@@ -321,6 +321,7 @@ address {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  align-items: center;
 }
 
 .about-us img {
@@ -346,6 +347,7 @@ address {
   display: flex;
   flex-flow: row-reverse wrap;
   justify-content: center;
+  align-items: center;
 }
 
 .our-story img {
@@ -375,4 +377,10 @@ address {
 
 .faq h2 {
   text-align: center;
+  margin: 30px 0;
+}
+
+.faq p {
+  font-size: 1rem;
+  line-height: 1.3rem;
 }
