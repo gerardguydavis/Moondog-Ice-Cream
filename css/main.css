@@ -283,3 +283,38 @@ address {
   margin-top: .5em;
   line-height: 1.6em;
 }
+
+/*****ABOUT*****/
+
+#about-page {
+  margin-top: 115px;
+}
+
+#about-page h2,
+#faqs h2 {
+  text-align: center;
+  font-family: "shrikhand", sans-serif;
+  color: #e3365f;
+}
+
+#about-page,
+#faqs {
+  font-family: "hammersmith one", sans-serif;
+  line-height: 1.3rem;
+  font-size: 1em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+#about-page .content-wrapper,
+#faqs .content-wrapper {
+  display: flex;
+  flex-basis: 80%;
+  padding-bottom: 10px;
+}
+
+.answer {
+  padding-bottom: 15px;
+  border-bottom: solid 1px #e3365f;
+}
