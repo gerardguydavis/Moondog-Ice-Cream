@@ -287,12 +287,11 @@ address {
 /*****ABOUT*****/
 
 #about-page {
-  margin-top: 115px;
+  margin-top: 100px;
 }
 
 #about-page h2,
 #faqs h2 {
-  text-align: center;
   font-family: "shrikhand", sans-serif;
   color: #e3365f;
 }
@@ -314,7 +313,66 @@ address {
   padding-bottom: 10px;
 }
 
+.bio article {
+  padding: 40px 0 0;
+}
+
+.about-us {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.about-us img {
+  width: 100%;
+    border: solid 5px #e3365f;
+  border-radius: 20px;
+}
+
+.about-us figure {
+  margin: 0;
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-text {
+  flex-basis: 45%;
+  padding-left: 7%;
+}
+
+.our-story {
+  display: flex;
+  flex-flow: row-reverse wrap;
+  justify-content: center;
+}
+
+.our-story img {
+  width: 100%;
+  border: solid 5px #e3365f;
+  border-radius: 20px;;
+}
+
+.our-story figure {
+  margin: 0;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.story-text {
+  flex-basis: 60%;
+  padding-right: 7%;
+  text-align: right;
+}
+
 .answer {
   padding-bottom: 15px;
   border-bottom: solid 1px #e3365f;
+}
+
+.faq h2 {
+  text-align: center;
 }
