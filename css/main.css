@@ -1,6 +1,4 @@
-body {
-background-color: #e3365f;
-}
+/****** GENERAL ******/
 
 header {
   display: flex;
@@ -58,7 +56,7 @@ header .navmenu {
   text-transform: uppercase;
 }
 
-/*******HOME PAGE*****/
+/****** HOME ******/
 
 .home {
   width: 100%;
@@ -70,11 +68,17 @@ header .navmenu {
   text-shadow: 1px 1px 16px #e8b7c3;
   font-size: 5em;
   text-align: center;
+  transition: .3s;
 }
 
 .home a {
   text-decoration: none;
   color: #fff;
+}
+
+.home a:hover h2 {
+  transform: scale(2) rotate(-3deg);
+  transition: .3s;
 }
 
 #flavors {
@@ -115,7 +119,7 @@ header .navmenu {
   border-top: solid 5px #e8b7c3;
 }
 
-/******FLAVORS*****/
+/****** FLAVORS ******/
 
 .flavor-menu {
   display: flex;
@@ -186,7 +190,7 @@ header .navmenu {
   margin-left: 25px;
 }
 
-/***** LOCATIONS ****/
+/****** LOCATIONS ******/
 
 #location-menu {
   display: flex;
@@ -204,7 +208,7 @@ header .navmenu {
 #location-menu h3 {
   text-align: center;
   font-family: "Hammersmith One", sans-serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   width: 100%;
   text-transform: uppercase;
   color: #e3365f;
@@ -287,7 +291,7 @@ address {
   line-height: 1.6em;
 }
 
-/*****ABOUT*****/
+/****** ABOUT ******/
 
 #about-page {
   margin-top: 100px;
@@ -394,7 +398,7 @@ color: #e3365f;
   line-height: 1.3rem;
 }
 
-/*****CONTACT*****/
+/****** CONTACT ******/
 
 #contact-page {
   display: flex;
@@ -458,13 +462,13 @@ input[type=submit]:hover {
   color: #e3365f;
 }
 
-/****FOOTER****/
+/***** FOOTER *****/
 
 footer {
   background-color: #e3365f;
   display: flex;
   flex-flow: row wrap;
-  width: 100%;
+  flex-basis: 80%;
   justify-content: center;
   align-items: center;
   color: #fff;
@@ -498,12 +502,12 @@ footer .social-icons {
 
 footer path {
   fill: #fff;
-  transition: .3s;
+  transition: .2s;
 }
 
 .social-icons a:hover path{
   fill: #ffe854;
-  transition: .3s;
+  transition: .2s;
 }
 
 #contact-footer {
