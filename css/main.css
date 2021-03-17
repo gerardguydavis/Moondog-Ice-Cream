@@ -1,3 +1,7 @@
+body {
+background-color: #e3365f;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -136,6 +140,18 @@ header .navmenu {
   flex-flow: row wrap;
 }
 
+.flavor-r {
+  padding: 3px 0;
+  margin: 10px 0;
+  background-color: #fff;
+  border: solid 3px #e3365f;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-flow: row-reverse wrap;
+}
+
 .flavor-menu ul {
   justify-content: center;
   padding: 0;
@@ -149,33 +165,24 @@ header .navmenu {
   align-items: center;
 }
 
-.flavor h5{
+.flavor h5,
+.flavor-r h5 {
   font-size: 1.5rem;
   margin: 10px 0 -10px 0;
   font-family: "Shrikhand", sans-serif;
   color: #e3365f;
 }
 
-.flav-scoop {
+.flavor .flav-scoop {
   width: 100px;
   border-radius: 50%;
   margin-right: 25px;
 }
 
-footer {
-  background-color: #e3365f;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  padding: 15px 0;
-}
-
-footer h6 {
-  font-size: .875em;
-  margin: .25em 0;
-  font-family: "Hammersmith One", sans-serif;
+.flavor-r .flav-scoop {
+  width: 100px;
+  border-radius: 50%;
+  margin-right: 0;
 }
 
 /***** LOCATIONS ****/
@@ -196,7 +203,7 @@ footer h6 {
 #location-menu h3 {
   text-align: center;
   font-family: "Hammersmith One", sans-serif;
-  font-size: 1.75rem;
+  font-size: 3rem;
   width: 100%;
   text-transform: uppercase;
   color: #e3365f;
@@ -217,6 +224,7 @@ footer h6 {
   justify-content: center;
   font-family: "Hammersmith One", sans-serif;
   padding-bottom: 25px;
+  border-top: 1px solid #e3365f;
 }
 
 .map {
@@ -236,11 +244,6 @@ footer h6 {
   left: 0;
   width: 100%;
   height: 100%;
-}
-
-.syracuse-location,
-.dewitt-location {
-  border-bottom: 1px solid #e3365f;
 }
 
 .location-details {
@@ -287,6 +290,12 @@ address {
 
 #about-page {
   margin-top: 100px;
+  font-family: "hammersmith one", sans-serif;
+  line-height: 1.3rem;
+  font-size: 1em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 #about-page h2 {
@@ -300,15 +309,6 @@ address {
   position: fixed;
   z-index: -1;
   background: url("../img/bg-stripes.png") repeat #f0e5d5;
-}
-
-#about-page {
-  font-family: "hammersmith one", sans-serif;
-  line-height: 1.3rem;
-  font-size: 1em;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
 }
 
 #about-page .content-wrapper  {
@@ -374,6 +374,10 @@ address {
   text-align: right;
 }
 
+.question {
+color: #e3365f;
+}
+
 .answer {
   padding-bottom: 15px;
   border-bottom: solid 1px #e3365f;
@@ -387,4 +391,121 @@ address {
 .faq p {
   font-size: 1rem;
   line-height: 1.3rem;
+}
+
+/*****CONTACT*****/
+
+#contact-page {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+#contact-page .content-wrapper {
+  margin-top: 100px;
+  display: flex;
+  flex-flow: row wrap;
+  flex-basis: 80%;
+  justify-content: center;
+}
+
+.contact-title {
+  flex-basis: 100%;
+  justify-content: center;
+  text-align: center;
+  font-family: "hammersmith one", sans-serif;
+  font-size: 1.65em;
+  color: #e3365f;
+  text-transform: uppercase;
+}
+
+.contact-form {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+form input,
+textarea {
+  width: 80%;
+  margin-bottom: 10px;
+  font-family: "hammersmith one", sans-serif;
+  border: solid 2px #e3365f;
+  border-radius: 2px;
+  padding: 10px;
+}
+
+textarea {
+  resize: none;
+  height: 250px;
+}
+
+input[type=submit] {
+  background-color: #e3365f;
+  color: #fff;
+  border: solid 2px #e3365f;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  width:60%;
+  padding: 20px 0;
+  margin-top: 10px;
+}
+
+input[type=submit]:hover {
+  background-color: #fff;
+  color: #e3365f;
+}
+
+/****FOOTER****/
+
+footer {
+  background-color: #e3365f;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+footer h6 {
+  font-size: .875em;
+  margin: .25em 0;
+  font-family: "Hammersmith One", sans-serif;
+}
+
+footer .footer-text {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: left;
+  flex-basis: 45%;
+}
+
+footer .social-icons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons svg {
+  width: 60px;
+  padding: 0 25px;
+}
+
+footer path {
+  fill: #fff;
+  transition: .3s;
+}
+
+.social-icons a:hover path{
+  fill: #ffe854;
+  transition: .3s;
+}
+
+#contact-footer {
+  position: fixed;
+  bottom: 0;
 }
