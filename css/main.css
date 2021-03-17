@@ -150,6 +150,7 @@ header .navmenu {
   align-items: center;
   display: flex;
   flex-flow: row-reverse wrap;
+  text-align: right;
 }
 
 .flavor-menu ul {
@@ -182,7 +183,7 @@ header .navmenu {
 .flavor-r .flav-scoop {
   width: 100px;
   border-radius: 50%;
-  margin-right: 0;
+  margin-left: 25px;
 }
 
 /***** LOCATIONS ****/
