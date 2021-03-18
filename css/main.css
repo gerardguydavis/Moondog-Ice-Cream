@@ -65,8 +65,8 @@ header .navmenu {
 
 .home h2{
   font-family: "Shrikhand", serif;
-  text-shadow: 8px 8px 0px #e3365f;
-  font-size: 5em;
+  text-shadow: 5px 5px 0px #e3365f;
+  font-size: 3.5em;
   text-align: center;
   transition: .3s;
 }
@@ -77,7 +77,7 @@ header .navmenu {
 }
 
 .home a:hover h2 {
-  transform: scale(2) rotate(-3deg);
+  transform: scale(1.2) rotate(-3deg);
   transition: .3s;
 }
 
@@ -86,16 +86,16 @@ header .navmenu {
   background: url("../img/best-strawberry-splash.png") center no-repeat pink;
   justify-content: center;
   align-items: center;
-  padding: 125px 0;
+  padding: 30px 0;
   border-bottom: solid 2px #e3365f;
 }
 
 #locations {
   display: flex;
-  background: url("../img/caramel-splash.png") top left no-repeat pink;
+  background: url("../img/caramel-splash.png") top right no-repeat pink;
   justify-content: center;
   align-items: center;
-  padding: 125px 0;
+  padding: 30px 0;
   border-top: solid 3px #e3365f;
   border-bottom: solid 2px #e3365f;
 }
@@ -105,7 +105,7 @@ header .navmenu {
   background: url("../img/chocolate-splash-2.png") top no-repeat pink;
   justify-content: center;
   align-items: center;
-  padding: 125px 0;
+  padding: 30px 0;
   border-top: solid 3px #e3365f;
   border-bottom: solid 2px #e3365f;
 }
@@ -115,7 +115,7 @@ header .navmenu {
   background: url("../img/bloob-splash.png") top no-repeat pink;
   justify-content: center;
   align-items: center;
-  padding: 125px 0;
+  padding: 30px 0;
   border-top: solid 3px #e3365f;
 }
 
@@ -128,7 +128,7 @@ header .navmenu {
 }
 
 .flavor-menu .content-wrapper {
-  flex-basis: 60%;
+  flex-basis: 80%;
   justify-content: center;
 }
 
@@ -172,22 +172,22 @@ header .navmenu {
 
 .flavor h5,
 .flavor-r h5 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin: 10px 0 -10px 0;
   font-family: "Shrikhand", sans-serif;
   color: #e3365f;
 }
 
 .flavor .flav-scoop {
-  width: 100px;
+  width: 75px;
   border-radius: 50%;
-  margin-right: 25px;
+  margin-right: 15px;
 }
 
 .flavor-r .flav-scoop {
-  width: 100px;
+  width: 75px;
   border-radius: 50%;
-  margin-left: 25px;
+  margin-left: 15px;
 }
 
 /****** LOCATIONS ******/
@@ -484,8 +484,8 @@ footer h6 {
 footer .footer-text {
   display: flex;
   flex-flow: row wrap;
-  justify-content: left;
-  flex-basis: 45%;
+  justify-content: center;
+  flex-basis: 90%;
 }
 
 footer .social-icons {
@@ -496,7 +496,7 @@ footer .social-icons {
 }
 
 .social-icons svg {
-  width: 60px;
+  width: 30px;
   padding: 0 25px;
 }
 
@@ -516,18 +516,18 @@ footer path {
 }
 
 @media only screen and (min-width:768px) {
-  
+
   header {
-    width: 450px;
+    width: 250px;
     height: 100%;
     z-index: 0;
   }
-  
+
   header .navmenu {
     display: inline-block;
     font-family: "Shrikhand", serif;
-    font-size: 2rem;
-    width: 450px;
+    font-size: 1.25rem;
+    width: 250px;
     text-align: center;
     height: 100%;
     padding: 15px 0;
@@ -540,29 +540,74 @@ footer path {
 
   .navmenu h2 {
     transition: .2s;
-    text-shadow: 4px 4px 0 #e3365f;
+    text-shadow: 3px 3px 0 #e3365f;
   }
   .navmenu a:hover h2 {
-    transform: scale(1.5) rotate(-2deg);
+    transform: scale(1.5);
     transition: .2s;
   }
+
   .navmenu span {
     color: #fff;
-    font-size: 1.5em;
-    transform: rotate(-2deg);
+    font-size: 2.25em;
+    text-shadow: 3px 3px 0 #e3365f;
+  }
+
+  .home {
+    display: none;
   }
   .flavor-menu .section-title {
-  padding: 0;
+    padding: 0;
   }
 
   .flavor-menu .content-wrapper {
-    margin-left: 450px;
-    margin-bottom: 125px;
+    margin-left: 250px;
+    margin-bottom: 100px;
+    flex-basis: 50%;
   }
-  
+
+  .flavor h5,
+  .flavor-r h5 {
+    font-size: 1.25rem;
+  }
+
   footer {
     position: fixed;
     bottom: 0;
     width: 100%;
   }
+}
+
+@media only screen and (min-width:1200px) {
+
+  header {
+    width:400px;
+  }
+
+  header .navmenu {
+    width: 400px;
+  }
+
+  .navmenu h2 {
+    font-size: 2.25em;
+    text-shadow: 4px 4px 0 #e3365f;
+  }
+
+  .navmenu span {
+    font-size: 3.375em;
+    text-shadow: 5px 5px 0 #e3365f;
+  }
+
+  .flavor-menu content-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis: 700px;
+    justify-content: center;
+  }
+
+
+  footer {
+    display: none;
+  }
+
 }
