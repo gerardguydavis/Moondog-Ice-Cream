@@ -514,3 +514,51 @@ footer path {
   position: fixed;
   bottom: 0;
 }
+
+@media only screen and (min-width:768px) {
+  
+  header {
+    width: 450px;
+    height: 100%;
+    z-index: 0;
+  }
+  
+  header .navmenu {
+    display: inline-block;
+    font-family: "Shrikhand", serif;
+    font-size: 2rem;
+    width: 450px;
+    text-align: center;
+    height: 100%;
+    padding: 15px 0;
+    background-color: pink;
+  }
+
+  .navmenu a {
+    color: #fff;
+  }
+
+  .navmenu h2 {
+    transition: .2s;
+    text-shadow: 4px 4px 0 #e3365f;
+  }
+  .navmenu a:hover h2 {
+    transform: scale(1.5) rotate(-2deg);
+    transition: .2s;
+  }
+  .navmenu span {
+    color: #fff;
+    font-size: 1.5em;
+    transform: rotate(-2deg);
+  }
+
+  .flavor-menu .content-wrapper {
+    margin-left: 450px;
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+}
