@@ -474,16 +474,19 @@ footer {
 }
 
 footer h6 {
-  font-size: .875em;
-  margin: .25em 0;
-  font-family: "Hammersmith One", sans-serif;
+
 }
 
 footer .footer-text {
+  font-size: .875em;
+  margin: .25em 0;
+  font-family: "Hammersmith One", sans-serif;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  flex-basis: 90%;
+  flex-basis: 85%;
+  text-align: center;
+  line-height: 1.2em;
 }
 
 footer .social-icons {
@@ -494,8 +497,8 @@ footer .social-icons {
 }
 
 .social-icons svg {
-  width: 30px;
-  padding: 0 25px;
+  width: 40px;
+  padding: 0 20px;
 }
 
 footer path {
@@ -529,7 +532,7 @@ footer path {
     text-align: center;
     height: 100%;
     padding: 15px 0;
-    background-color: pink;
+    background: url("../img/neo-splash.jpg") center;
   }
 
   .navmenu a {
@@ -561,7 +564,7 @@ footer path {
 
   .flavor-menu .content-wrapper {
     margin-left: 250px;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
     flex-basis: 50%;
   }
 
@@ -588,7 +591,19 @@ footer path {
   footer {
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 250px;
+    text-align: center;
+    font-size: .75em;
+  }
+
+  .footer-text {
+    display: flex;
+    flex-basis: 200px;
+  }
+
+  .social-icons svg {
+    width: 60px;
+    padding: 30px;
   }
 }
 
@@ -627,7 +642,16 @@ footer path {
   }
 
   footer {
-    display: none;
+    width: 400px;
+  }
+
+  .social-icons {
+    flex-basis: 400px;
+  }
+
+  .social-icons svg {
+    padding: 20px;
+    width: 50px;
   }
 
 }
