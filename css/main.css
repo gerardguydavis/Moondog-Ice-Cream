@@ -65,7 +65,7 @@ header .navmenu {
 
 .home h2{
   font-family: "Shrikhand", serif;
-  text-shadow: 1px 1px 16px #e8b7c3;
+  text-shadow: 8px 8px 0px #e3365f;
   font-size: 5em;
   text-align: center;
   transition: .3s;
@@ -83,40 +83,40 @@ header .navmenu {
 
 #flavors {
   display: flex;
-  background: url("../img/vanilla-splash.jpg") center left no-repeat pink;
+  background: url("../img/best-strawberry-splash.png") center no-repeat pink;
   justify-content: center;
   align-items: center;
   padding: 125px 0;
-  border-bottom: solid 5px #e8b7c3;
+  border-bottom: solid 2px #e3365f;
 }
 
 #locations {
   display: flex;
-  background: url("../img/ice-cream-case.jpg") left no-repeat pink;
+  background: url("../img/caramel-splash.png") top left no-repeat pink;
   justify-content: center;
   align-items: center;
   padding: 125px 0;
-  border-top: solid 5px #e8b7c3;
-  border-bottom: solid 5px #e8b7c3;
+  border-top: solid 3px #e3365f;
+  border-bottom: solid 2px #e3365f;
 }
 
 #about {
   display: flex;
-  background: url("../img/family.jpg") top no-repeat pink;
+  background: url("../img/chocolate-splash-2.png") top no-repeat pink;
   justify-content: center;
   align-items: center;
   padding: 125px 0;
-  border-top: solid 5px #e8b7c3;
-  border-bottom: solid 5px #e8b7c3;
+  border-top: solid 3px #e3365f;
+  border-bottom: solid 2px #e3365f;
 }
 
 #contact {
   display: flex;
-  background: url("../img/cones.jpg") center no-repeat pink;
+  background: url("../img/bloob-splash.png") top no-repeat pink;
   justify-content: center;
   align-items: center;
   padding: 125px 0;
-  border-top: solid 5px #e8b7c3;
+  border-top: solid 3px #e3365f;
 }
 
 /****** FLAVORS ******/
