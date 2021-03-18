@@ -192,17 +192,12 @@ header .navmenu {
 
 /****** LOCATIONS ******/
 
-#location-menu {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-}
 
 #location-menu .content-wrapper {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  flex-basis: 90%;
+  flex-basis: 80%;
 }
 
 #location-menu h3 {
@@ -217,14 +212,14 @@ header .navmenu {
 #location-menu h4 {
   font-style: normal;
   width: 100%;
-  margin: .5em 0;
+  margin: .25em 0;
   font-size: 1.2em;
   color: #e3365f;
 }
 
 #location-menu article {
   display: flex;
-  flex-basis: 100%;
+  flex-basis: 85%;
   flex-flow: row wrap;
   justify-content: center;
   font-family: "Hammersmith One", sans-serif;
@@ -234,12 +229,12 @@ header .navmenu {
 
 .map {
   position: relative;
-  flex-basis: 60%;
+  flex-basis: 85%;
   padding-bottom: 40%;
   height: 0;
   overflow: hidden;
   margin-bottom: 20px;
-  border: solid 6px #e3365f;
+  border: solid 4px #e3365f;
   border-radius: 20px;
 }
 
@@ -253,24 +248,26 @@ header .navmenu {
 
 .location-details {
   display: flex;
-  flex-basis: 80%;
+  flex-basis: 100%;
   justify-content: center;
   align-items: baseline;
-  font-size: 1.35rem;
+  font-size: .75rem;
 }
 
 address {
-  border-right: 1px solid #e3365f;
   padding-bottom: 10px;
   display: flex;
   flex-flow: row wrap;
   flex-basis: 45%;
   text-align: right;
-  padding-right: 30px;
+  padding-right: 10px;
   margin: 0;
   line-height: 1.4em;
 }
 
+.location-address {
+  padding: 0 0 10px;
+}
 .location-address,
 .location-phone {
   flex-basis: 100%;
@@ -279,15 +276,16 @@ address {
 .hours {
   display: flex;
   flex-flow: row wrap;
-  flex-basis: 45%;
-  padding-left: 30px;
+  flex-basis: 50%;
+  border-left: 1px solid #e3365f;
+  padding-left: 10px;
   margin: 0;
 }
 
 .hours ul{
   padding: 0;
   list-style: none;
-  margin-top: .5em;
+  margin-top: 0;
   line-height: 1.6em;
 }
 
@@ -556,6 +554,7 @@ footer path {
   .home {
     display: none;
   }
+
   .flavor-menu .section-title {
     padding: 0;
   }
@@ -570,6 +569,21 @@ footer path {
   .flavor-r h5 {
     font-size: 1.25rem;
   }
+
+  #location-menu .content-wrapper {
+    flex-basis: 50%;
+    justify-content: center;
+    margin-left: 250px;
+    margin-bottom: 100px;
+  }
+
+  #location-menu .section-title {
+    margin: 0 0 20px;
+    text-align: center;
+    width: 500px;
+    padding: 20px 0 0;
+  }
+
 
   footer {
     position: fixed;
@@ -605,6 +619,12 @@ footer path {
     justify-content: center;
   }
 
+  .flavor,
+  .flavor-r {
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis: 300px
+  }
 
   footer {
     display: none;
