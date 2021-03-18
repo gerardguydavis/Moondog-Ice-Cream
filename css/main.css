@@ -551,9 +551,13 @@ footer path {
     font-size: 1.5em;
     transform: rotate(-2deg);
   }
+  .flavor-menu .section-title {
+  padding: 0;
+  }
 
   .flavor-menu .content-wrapper {
     margin-left: 450px;
+    margin-bottom: 125px;
   }
   
   footer {
