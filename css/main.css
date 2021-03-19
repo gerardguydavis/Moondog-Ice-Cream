@@ -11,6 +11,7 @@ header {
   top: 0;
   z-index: 10;
   padding: 16px 0 0 0;
+  border-bottom: 3px solid #fff;
 }
 
 header a {
@@ -502,6 +503,7 @@ footer {
   align-items: center;
   color: #fff;
   padding: 1rem 0;
+  border-top: solid 3px #fff;
 }
 
 footer .footer-text {
@@ -558,6 +560,7 @@ footer path {
     height: 100%;
     z-index: 0;
     transition: .2s;
+    box-shadow: 1px 1px 11px #888;
   }
 
   header .navmenu {
@@ -570,6 +573,7 @@ footer path {
     padding: 15px 0;
     background: url("../img/strawberry-splash.jpg") right;
     transition: .2s;
+    border-top: 3px solid #fff;
   }
 
   .navmenu a {
@@ -753,18 +757,8 @@ footer path {
     text-shadow: 5px 5px 0 #e3365f;
   }
 
-  .flavor-menu content-wrapper {
-    display: flex;
-    flex-flow: row wrap;
-    flex-basis: 700px;
-    justify-content: center;
-  }
-
-  .flavor,
-  .flavor-r {
-    display: flex;
-    flex-flow: row wrap;
-    flex-basis: 300px
+  .flavor-menu .content-wrapper {
+    margin-left: 400px;
   }
 
   #about-page .content-wrapper {
