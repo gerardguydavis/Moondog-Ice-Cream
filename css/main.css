@@ -997,3 +997,26 @@ footer path {
   }
 
 }
+
+@media only screen and (min-width:1665px) {
+
+  .flavor,
+  .flavor-r {
+    text-align: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    flex-basis: 300px;
+    margin: 10px;
+    padding: 10px;
+    align-items: baseline;
+
+  }
+
+  .flav-scoop {
+    flex-basis: 50%;
+  }
+
+  .flavor-menu ul li {
+    flex-basis: 75%;
+  }
+}
