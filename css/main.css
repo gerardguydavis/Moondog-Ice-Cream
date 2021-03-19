@@ -212,10 +212,11 @@ header .navmenu {
 
 #location-menu h4 {
   font-style: normal;
-  width: 100%;
+  flex-basis: 100%;
   margin: .25em 0;
   font-size: 1.2em;
   color: #e3365f;
+  text-align: unset;
 }
 
 #location-menu article {
@@ -264,6 +265,7 @@ address {
   padding-right: 10px;
   margin: 0;
   line-height: 1.4em;
+  font-style: normal;
 }
 
 .location-address {
@@ -555,6 +557,7 @@ footer path {
 
 @media only screen and (min-width:768px) {
 
+/***** HEADER ****/
   header {
     width: 250px;
     height: 100%;
@@ -602,9 +605,13 @@ footer path {
     margin: 15px 0 0;
   }
 
+/***** HOMEPAGE *****/
+
   .home {
     display: none;
   }
+
+/***** FLAVORS *****/
 
   .flavor-menu .section-title {
     padding: 0;
@@ -621,6 +628,8 @@ footer path {
     font-size: 1.25rem;
   }
 
+/***** LOCATION *****/
+
   #location-menu .content-wrapper {
     justify-content: center;
     margin-left: 250px;
@@ -630,9 +639,49 @@ footer path {
   #location-menu .section-title {
     margin: 0 0 20px;
     text-align: center;
-    width: 500px;
     padding: 20px 0 0;
   }
+
+  #location-menu h4 {
+    font-size: 1.5rem;
+  }
+
+  #location-menu address {
+  text-transform: none;
+  font-size: 1rem;
+  flex-basis: 100%;
+  text-align: left;
+  }
+
+  #location-menu .hours {
+  flex-basis: 100%;
+  border: none;
+  padding: unset;
+  }
+
+  #location-menu ul {
+  font-size: 1rem;
+  }
+  
+  #location-menu article {
+    display: flex;
+    flex-basis: 80%;
+    align-items: center;
+}
+
+  .location-details {
+    flex-basis: 40%;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+}
+
+  #location-menu .map{
+    flex-basis: 40%;
+    margin-right: 40px;
+}
+
+/***** ABOUT *****/
 
   #about-page {
     margin-top: 0;
@@ -711,6 +760,8 @@ footer path {
     margin: 0;
   }
 
+/***** FOOTER *****/
+
   footer {
     position: fixed;
     bottom: 0;
@@ -737,6 +788,8 @@ footer path {
 
 @media only screen and (min-width:1200px) {
 
+/***** HEADER *****/
+
   header {
     width:400px;
     transition: .2s;
@@ -757,9 +810,61 @@ footer path {
     text-shadow: 5px 5px 0 #e3365f;
   }
 
+/***** FLAVORS *****/
+
   .flavor-menu .content-wrapper {
     margin-left: 400px;
   }
+
+/***** LOCATIONS *****/
+
+  #location-menu .content-wrapper {
+    margin-left: 400px;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  #location-menu h4 {
+    font-size: 2rem;
+  }
+
+  #location-menu address {
+  text-transform: none;
+  font-size: 1.4rem;
+  flex-basis: 100%;
+  text-align: left;
+  }
+
+  #location-menu .hours {
+  flex-basis: 100%;
+  border: none;
+  padding: unset;
+  }
+
+  #location-menu ul {
+  font-size: 1.4rem;
+  }
+  
+  #location-menu article {
+    display: flex;
+    flex-basis: 80%;
+    align-items: center;
+}
+
+  .location-details {
+    flex-basis: 40%;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+}
+
+  #location-menu .map{
+    flex-basis: 40%;
+    margin-right: 40px;
+}
+
+
+/***** ABOUT *****/
 
   #about-page .content-wrapper {
   display: flex;
@@ -771,32 +876,45 @@ footer path {
 }
 
   .bio article{
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
 
   .about-us,
   .our-story {
-    flex-basis: 80%;
     justify-content: center;
+  }
+
+  .about-us figure {
+    flex-basis: 30%;
+    min-width: 300px;
   }
 
   .about-text {
     flex-basis: 30%;
     padding-left: 50px;
+    max-width: 350px;
+  }
+
+  .our-story figure {
+  flex-basis: 25%;
+  min-width: 250px;
   }
 
   .story-text {
     flex-basis: 40%;
     padding-right: 50px;
+    max-width: 350px;
   }
 
   .faq {
-    margin-top: -50px;
+    margin-top: -10px;
   }
 
   .question {
     flex-basis: 100%;
   }
+
+/***** FOOTER *****/
 
   footer {
     max-width: 400px;
