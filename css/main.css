@@ -820,6 +820,9 @@ footer path {
 
 /***** FLAVORS *****/
 
+  .flavor-menu {
+
+  }
   .flavor-menu .content-wrapper {
     margin-left: 400px;
     flex-basis: 100%;
@@ -829,7 +832,6 @@ footer path {
     height: 800px;
     display: flex;
     flex-flow: row wrap;
-    margin-bottom: 20px;
   }
 
   .flav-scoop {
@@ -842,7 +844,7 @@ footer path {
   }
 
   .flavor-menu h5 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
 
   .flavor-menu p {
@@ -1019,4 +1021,5 @@ footer path {
   .flavor-menu ul li {
     flex-basis: 75%;
   }
+
 }
