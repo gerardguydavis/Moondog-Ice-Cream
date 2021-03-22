@@ -120,6 +120,10 @@ header .navmenu {
   border-top: solid 3px #e3365f;
 }
 
+#main-page {
+  display: none;
+}
+
 /****** FLAVORS ******/
 
 .flavor-menu {
@@ -616,6 +620,169 @@ footer path {
     display: none;
   }
 
+  #main-page {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 250px;
+    font-family: "hammersmith one", sans-serif;
+    font-size: 2rem;
+  }
+
+  #main-page p {
+    font-size: 1.2rem;
+  }
+
+  .news-1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    height: 100%;
+  }
+  
+  .news-1 .content {
+    display: flex;
+    flex-basis: 85%;
+    flex-flow: row wrap;
+    justify-content: center;
+    background: url("../img/strawberry-scoops.jpg") center;
+    background-size: cover;
+    border: solid 5px #e3365f;
+    border-radius: 15px;
+    box-shadow: 3px 3px 15px #888;
+  }
+
+  .news-1 h3 {
+    flex-basis: 100%;
+    font-family: "Shrikhand", serif;
+    color: #fff;
+    font-size: 4rem;
+    text-shadow: 4px 4px 0px #e3365f;
+    margin: 15px 0 0 20px;
+  }
+
+  .news-1 .venus {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 25px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+
+  .venus h4 {
+    color: #fff;
+    text-shadow: 3px 3px 0px #e3365f;
+    margin: -85px 0;
+    background-color: rgba(70, 70, 70, .3);
+  }
+
+  .venus p {
+    color: #fff;
+    text-shadow: 1px 1px 0 #000;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(70, 70, 70, .3);
+  }
+
+    .news-2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+
+    .news-2 .content {
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis: 85%;
+    background: url("../img/blue-cones2.jpg") center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    border: solid 5px #e3365f;
+    border-radius: 15px;
+    box-shadow: 3px 3px 15px #888;
+  }
+   
+    .news-2 .news-text {
+      flex-basis: 65%;
+      align-items: center;
+      color: #fff;
+      background-color: rgba(70, 70, 70, .3);
+      border-radius: 15px;
+      padding: 20px;
+    }
+
+   .news-2 h3 {
+    flex-basis: 100%;
+    font-family: "Shrikhand", serif;
+    color: #fff;
+    font-size: 4rem;
+    text-shadow: 4px 4px 0px #e3365f;
+    margin: 0;
+  }
+
+    .news-2 p {
+      line-height: 1.5rem;
+      text-shadow: 1px 1px 0px #000;
+    }
+
+  .news-3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    padding-bottom: 20px;
+  }
+
+  .news-3 a {
+   flex-basis: 86.5%;
+  }
+  
+  .news-3 .content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background: url("../img/blue-cones.jpg") center;
+    background-size: cover;
+    border: solid 5px #e3365f;
+    border-radius: 15px;
+    box-shadow: 3px 3px 15px #888;
+    padding: 40px 0;
+  }
+
+   .news-3 .news-text {
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: center;
+     align-items: center;
+     background-color: rgba(70, 70, 70, .3);
+     flex-basis: 70%;
+     padding: 0 10px;
+     border-radius: 15px;
+   }
+
+   .news-3 h3 {
+    font-family: "Shrikhand", serif;
+    color: #fff;
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: 4px 4px 0px #e3365f;
+    margin: 15px 0 0;
+  }
+
+   .news-3 p {
+     text-shadow: 1px 1px 0 #000;
+     text-align: center;
+     color: #fff;
+     flex-basis: 85%;
+    }
+
+  .news-3 a {
+    text-decoration: none;
+  }
+
+
+
 /***** FLAVORS *****/
 
   .flavor-menu .content-wrapper {
@@ -818,11 +985,41 @@ footer path {
     text-shadow: 5px 5px 0 #e3365f;
   }
 
+/***** HOME *****/
+
+  #main-page {
+    margin-left: 400px;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  #main-page .content-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .news-1,
+  .news-2 {
+    flex-basis: 50%;
+    flex-flow: row wrap;
+    height: 100%;
+  }
+
+  .news-1 .content,
+  .news-2 .content {
+    flex-basis: 95%;
+  }
+
+  .news-3{
+    flex-basis: 100%;
+  }
+
+  .news-3 a {
+    flex-basis: 98%;
+  }
+
 /***** FLAVORS *****/
 
-  .flavor-menu {
-
-  }
   .flavor-menu .content-wrapper {
     margin-left: 400px;
     flex-basis: 100%;
