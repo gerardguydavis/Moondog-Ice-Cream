@@ -1034,7 +1034,6 @@ footer path {
   }
 
   .flavor-menu ul {
-    height: 800px;
     display: flex;
     flex-flow: row wrap;
   }
