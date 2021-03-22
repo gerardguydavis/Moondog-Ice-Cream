@@ -626,6 +626,7 @@ footer path {
     margin-left: 250px;
     font-family: "hammersmith one", sans-serif;
     font-size: 2rem;
+    transition: .2s;
   }
 
   #main-page p {
@@ -702,6 +703,7 @@ footer path {
     border: solid 5px #e3365f;
     border-radius: 15px;
     box-shadow: 3px 3px 15px #888;
+    padding: 30px 0;
   }
    
     .news-2 .news-text {
