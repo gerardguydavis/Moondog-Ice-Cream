@@ -637,9 +637,8 @@ footer path {
     display: flex;
     justify-content: center;
     margin-top: 25px;
-    height: 100%;
   }
-  
+
   .news-1 .content {
     display: flex;
     flex-basis: 85%;
@@ -650,6 +649,7 @@ footer path {
     border: solid 5px #e3365f;
     border-radius: 15px;
     box-shadow: 3px 3px 15px #888;
+    height: 700px;
   }
 
   .news-1 h3 {
@@ -661,29 +661,35 @@ footer path {
     margin: 15px 0 0 20px;
   }
 
-  .news-1 .venus {
+  .news-1 .news-text {
     display: flex;
-    flex-flow: row wrap;
-    align-items: flex-end;
-    justify-content: center;
-    padding-bottom: 25px;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: space-between;
   }
 
-  .venus h4 {
+  .news-1 h4 {
     color: #fff;
+    font-size: 3rem;
+    font-family: "Shrikhand", serif;
+    justify-content: center;
     text-shadow: 3px 3px 0px #e3365f;
-    margin: -85px 0;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    flex-flow: row wrap;
+    margin-bottom: 10px;
     background-color: rgba(70, 70, 70, .3);
   }
 
-  .venus p {
+  .news-1 span {
     color: #fff;
+    font-family: "Hammersmith One", sans-serif;
+    font-size: 1.2rem;
     text-shadow: 1px 1px 0 #000;
     width: 100%;
     text-align: center;
-    background-color: rgba(70, 70, 70, .3);
+    line-height: 2rem;
   }
 
     .news-2 {
@@ -705,7 +711,7 @@ footer path {
     box-shadow: 3px 3px 15px #888;
     padding: 30px 0;
   }
-   
+
     .news-2 .news-text {
       flex-basis: 65%;
       align-items: center;
@@ -739,7 +745,7 @@ footer path {
   .news-3 a {
    flex-basis: 86.5%;
   }
-  
+
   .news-3 .content {
     display: flex;
     flex-flow: row wrap;
@@ -893,6 +899,11 @@ footer path {
     flex-basis: 45%;
   }
 
+  .about-us img,
+  .our-story img {
+    box-shadow: 3px 3px 15px #999;
+  }
+
   .about-text {
     flex-basis: 45%;
     padding-left: 25px;
@@ -1010,7 +1021,7 @@ footer path {
   .news-2 {
     flex-basis: 50%;
     flex-flow: row wrap;
-    height: 100%;
+    height: auto;
   }
 
   .news-1 .content,
